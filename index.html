@@ -303,6 +303,18 @@
     <h2>Selected projects</h2>
     <div class="grid">
 
+      <a class="proj" href="cartflow.html">
+        <div class="proj-head"><h3>CartFlow Serverless Lakehouse</h3><span class="arrow">→</span></div>
+        <p class="hook">200K+ events through an event-driven AWS lakehouse for $0.68, reconciled to the cent across two warehouses.</p>
+        <p class="d">
+          S3 drops trigger Lambda and Glue, with bad rows <strong>quarantined (2,979), not dropped</strong>. Raw JSON/CSV
+          became partitioned Parquet that <strong>cut Athena bytes scanned by over 99%</strong> on single-column queries.
+          A star schema with a Type 2 customer dimension loads into Postgres and Redshift Serverless, where a
+          14-check reconciliation <strong>caught two silent load bugs</strong> that every per-load check had missed.
+        </p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">AWS Glue</span><span class="tag">Lambda</span><span class="tag">Athena</span><span class="tag">Terraform</span><span class="tag">PostgreSQL</span><span class="tag">Redshift</span></div>
+      </a>
+
       <a class="proj" href="https://github.com/DomSam1506/ingestion-pipeline" target="_blank" rel="noopener">
         <div class="proj-head"><h3>High-Throughput Ingestion Pipeline</h3><span class="arrow">↗</span></div>
         <p class="hook">130,000+ API calls a day, parallelized without tripping a single rate limit.</p>
@@ -352,17 +364,17 @@
       <div class="skill-row"><dt>Languages</dt><dd>
         <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">C++</span></dd></div>
       <div class="skill-row"><dt>Data Engineering</dt><dd>
-        <span class="chip">ETL/ELT</span><span class="chip">Data Lakes</span><span class="chip">Data Warehousing</span><span class="chip">Apache Spark (PySpark, Spark SQL)</span><span class="chip">Apache Airflow</span><span class="chip">Polars</span><span class="chip">Pandas</span><span class="chip">dbt</span><span class="chip">Parquet</span></dd></div>
+        <span class="chip">ETL/ELT</span><span class="chip">Data Lakes</span><span class="chip">Data Warehousing</span><span class="chip">Dimensional Modeling (Star Schema, SCD Type 2)</span><span class="chip">Data Quality</span><span class="chip">Apache Spark (PySpark, Spark SQL)</span><span class="chip">Apache Airflow</span><span class="chip">Polars</span><span class="chip">Pandas</span><span class="chip">DuckDB</span><span class="chip">dbt</span><span class="chip">Parquet</span></dd></div>
       <div class="skill-row"><dt>Cloud &amp; DevOps</dt><dd>
-        <span class="chip">AWS (S3, Glue, Lambda, Athena, MWAA, EKS, IAM)</span><span class="chip">GCP (Cloud Storage)</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">Argo</span><span class="chip">GitHub Actions</span></dd></div>
+        <span class="chip">AWS (S3, Glue, Lambda, Athena, Redshift Serverless, MWAA, EKS, IAM)</span><span class="chip">GCP (Cloud Storage)</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">Argo</span><span class="chip">GitHub Actions</span></dd></div>
       <div class="skill-row"><dt>Databases</dt><dd>
         <span class="chip">PostgreSQL</span><span class="chip">MSSQL</span><span class="chip">Amazon Redshift</span><span class="chip">DynamoDB</span></dd></div>
       <div class="skill-row"><dt>Reporting &amp; Viz</dt><dd>
-        <span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Excel</span></dd></div>
+        <span class="chip">Power BI</span><span class="chip">Metabase</span><span class="chip">Tableau</span><span class="chip">Excel</span></dd></div>
       <div class="skill-row"><dt>ML &amp; Data Science</dt><dd>
         <span class="chip">Scikit-learn</span><span class="chip">NumPy</span><span class="chip">Jupyter</span></dd></div>
       <div class="skill-row"><dt>Dev tools &amp; AI agents</dt><dd>
-        <span class="chip">Git/GitHub</span><span class="chip">Cline (AI coding agents, prompt engineering)</span></dd></div>
+        <span class="chip">Git/GitHub</span><span class="chip">pytest</span><span class="chip">Cline (AI coding agents, prompt engineering)</span></dd></div>
     </dl>
   </section>
 
